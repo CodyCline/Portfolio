@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Layout from './hoc/Layout/Layout';
-import ProjectPage from './Containers/ProjectPage/ProjectPage'
-import Projects from './Containers/Project/Project';
+import Projects from './Containers/Projects/Projects'
+import ProjectPage from './Containers/ProjectPage/ProjectPage';
 import './App.scss';
 
 class App extends React.Component {

@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '@material/react-button';
 import Card, {
     CardPrimaryContent,
-    CardMedia,
     CardActions,
     CardActionButtons,
     CardActionIcons
@@ -13,19 +12,19 @@ import { withRouter } from 'react-router-dom';
 
 class ProjectCard extends React.Component {
     onProjectNavigate = () => {
-        this.props.history.push("/");
+        this.props.history.push("/project-testxxx");
     }
 
-    render () {
+    render (props) {
         return (
-            <Card >
-                <CardPrimaryContent>
-                    {/* <CardMedia imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" /> */}
-                    {/* <img alt="card" style={{"height": '10em'}} src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"></img> */}
+            <Card>
+                <CardPrimaryContent onClick={this.onProjectNavigate}>
+                    <img alt="card" style={{"height": '8em'}} src="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg"></img>
                     <h1>Project: XXXXX</h1>
-                    <p>CMS for Developer Projects allows users to manage their developer projects</p>
+                    <p>{this.props.supportText}</p>
                 </CardPrimaryContent>
-                <Line></Line>
+                <Line/>
+                
                 <CardActions>                
                     <CardActionButtons>
                         <Button onClick={this.onProjectNavigate}>SEE MORE</Button>
