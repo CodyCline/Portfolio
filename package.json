@@ -9,6 +9,7 @@
     "@material/react-layout-grid": "^0.7.0",
     "@material/react-list": "^0.7.0",
     "@material/react-material-icon": "^0.7.0",
+    "@material/react-tab-bar": "^0.7.0",
     "@material/react-top-app-bar": "^0.7.0",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
