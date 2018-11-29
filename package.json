@@ -12,6 +12,8 @@
     "@material/react-material-icon": "^0.7.0",
     "@material/react-tab-bar": "^0.7.0",
     "@material/react-top-app-bar": "^0.7.0",
+    "@mdi/js": "^3.0.39",
+    "@mdi/react": "^1.1.0",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

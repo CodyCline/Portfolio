@@ -7,7 +7,7 @@ import Card, {
     CardActionIcons
   } from "@material/react-card";
 import MaterialIcon from '@material/react-material-icon';
-import Line from '../../Assets/SVG-Shapes/Line/Line';
+import Line from '../../Assets/SVG-Assets/Line/Line';
 import { withRouter } from 'react-router-dom';
 
 class ProjectCard extends React.Component {

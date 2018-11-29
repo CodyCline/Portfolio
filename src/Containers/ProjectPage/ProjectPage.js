@@ -14,7 +14,7 @@ class ProjectPage extends React.Component {
             <Row>
                 <Cell align="left"><MaterialIcon icon="arrow_back" onClick={this.props.history.goBack}/></Cell>
                 <Cell align="middle"><h2>Project XXXXX</h2></Cell>
-                <Cell align="right"></Cell>
+                <Cell align="right"/>
             </Row>
             <Row>
                 <Cell align>
