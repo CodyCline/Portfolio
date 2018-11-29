@@ -15,7 +15,7 @@ class ProjectCard extends React.Component {
         this.props.history.push("/project-testxxx");
     }
 
-    render (props) {
+    render () {
         return (
             <Card>
                 <CardPrimaryContent onClick={this.onProjectNavigate}>

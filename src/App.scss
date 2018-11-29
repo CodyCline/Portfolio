@@ -7,6 +7,15 @@
 @import '@material/react-list/index.scss';
 @import '@material/react-top-app-bar/index.scss';
 @import '@material/react-tab-bar/index.scss';
+@import '@material/react-list/index.scss';
+@import '@material/react-line-ripple/index.scss';
+
 
 // Custom imports
+
+//For the top app bar and side drawer
 @import './hoc/Layout/layout.scss';
+//For the profile intro on the index page
+@import './Components/ProfileIntro/ProfileIntro.scss';
+//For custom dividers that have color and other properties injected
+@import './Assets/Divider/Divider.scss';

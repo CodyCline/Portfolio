@@ -7,9 +7,9 @@ const projects = () => {
     return (
         <Grid>
             <Row>
-                <Cell align="left"/>
-                <Cell align="middle"><h1>Projects & Client Work</h1></Cell>
-                <Cell align="right"/>
+                <Cell desktopColumns={4} phoneColumns={4} tabletColumns={4} align="left"/>
+                <Cell desktopColumns={4} phoneColumns={4} tabletColumns={4} align="middle"><h1>Projects & Client Work</h1></Cell>
+                <Cell desktopColumns={4} phoneColumns={4} tabletColumns={4} align="right"/>
             </Row>
             <Row>
                 <Cell align="middle" desktopColumns={3} phoneColumns={4} tabletColumns={4}>
