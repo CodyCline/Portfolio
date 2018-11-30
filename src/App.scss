@@ -11,6 +11,7 @@
 @import '@material/react-line-ripple/index.scss';
 @import '@material/react-text-field/index.scss';
 
+
 // Custom imports
 
 //For the top app bar and side drawer
@@ -18,3 +19,4 @@
 //For the profile intro on the index page
 @import './Components/ProfileIntro/ProfileIntro.scss';
 //For custom dividers that have color and other properties injected
+@import './hoc/withRipple/Icon.scss';

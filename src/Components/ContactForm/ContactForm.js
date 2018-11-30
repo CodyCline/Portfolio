@@ -3,6 +3,8 @@ import Aux from '../../hoc/_Aux';
 import { Grid, Row, Cell } from '@material/react-layout-grid';
 import TextField, {HelperText, Input} from '@material/react-text-field';
 import Button from '@material/react-button'
+import Icon from '@mdi/react'
+import { mdiLinkedinBox, mdiGithubFace, mdiPhone, mdiEmail } from '@mdi/js'
 
 class ContactForm extends React.Component {
     state = {}
@@ -59,7 +61,6 @@ class ContactForm extends React.Component {
                 <Cell desktopColumns={6}>
                     <TextField 
                         outlined
-                        fullwidth
                         label='Subject *'
                         helperText={<HelperText>Required</HelperText>}
                     >

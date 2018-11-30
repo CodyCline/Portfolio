@@ -1,13 +1,8 @@
 import React from 'react';
-import Card, {
-    CardPrimaryContent,
-    CardActions,
-    CardActionButtons,
-    CardActionIcons
-} from "@material/react-card";
 import Aux from '../../hoc/_Aux';
-import Icon from '@mdi/react'
-import { mdiLinkedinBox, mdiGithubFace, mdiPhone, mdiEmail } from '@mdi/js'
+import Icon from '@mdi/react';
+import { mdiLinkedinBox, mdiGithubFace, mdiPhone, mdiEmail } from '@mdi/js';
+import RippleIcon from '../../hoc/withRipple/Icon';
 
 const profileDetails = () => {
     return (

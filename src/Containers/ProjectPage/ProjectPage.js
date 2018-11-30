@@ -2,7 +2,8 @@ import React from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Grid, Row, Cell } from '@material/react-layout-grid';
 import Button from '@material/react-button';
-import MaterialIcon from '@material/react-material-icon';
+import Icon from '@mdi/react';
+import { mdiArrowAll } from '@mdi/js';
 import Card from '@material/react-card';
 
 
@@ -12,7 +13,7 @@ class ProjectPage extends React.Component {
         return (
         <Grid>
             <Row>
-                <Cell align="left"><MaterialIcon icon="arrow_back" onClick={this.props.history.goBack}/></Cell>
+                <Cell align="left"><Icon path={ mdiArrowAll } size={1.5} color="#626262" onClick={this.props.history.goBack}/></Cell>
                 <Cell align="middle"><h2>Project XXXXX</h2></Cell>
                 <Cell align="right"/>
             </Row>

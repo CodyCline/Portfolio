@@ -13,16 +13,16 @@ const projects = () => {
             </Row>
             <Row>
                 <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
-                    <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
+                    <ProjectCard height="8em" supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
                 <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
-                    <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
+                    <ProjectCard height="8em" supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
                 <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
-                    <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
+                    <ProjectCard height="8em" supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
                 <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
-                    <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
+                    <ProjectCard height="8em" supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
             </Row>
         </Grid>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRouter, NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import TopAppBar, {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 import Drawer from '@material/react-drawer';
 import List, {ListItem, ListItemText, ListItemGraphic} from '@material/react-list';
-import Button from '@material/react-button';
-import MaterialIcon from '@material/react-material-icon';
+import Icon from '@mdi/react';
+import { mdiMenu, mdiHome, mdiFolder, mdiEmail } from '@mdi/js';
 
 
 class Layout extends React.Component {
@@ -46,15 +46,15 @@ class Layout extends React.Component {
             >
                 <List>
                     <ListItem onClick={this.navigateHome}>
-                        <ListItemGraphic graphic={<MaterialIcon icon='home'/>} />
+                        <ListItemGraphic graphic={<Icon path={ mdiHome } color="#626262" />} />
                         <ListItemText primaryText='Home' />
                     </ListItem>
                     <ListItem onClick={this.handleRedirect}>
-                        <ListItemGraphic graphic={<MaterialIcon icon='folder'/>} />
+                        <ListItemGraphic graphic={<Icon path={ mdiFolder } color="#626262" />} />
                         <ListItemText primaryText='Projects' />
                     </ListItem>
                     <ListItem onClick={this.handleRedirect}>
-                        <ListItemGraphic graphic={<MaterialIcon icon='mail'/>} />
+                        <ListItemGraphic graphic={<Icon path={ mdiEmail } color="#626262" />} />
                         <ListItemText primaryText='Contact' />
                     </ListItem>
                 
@@ -62,11 +62,15 @@ class Layout extends React.Component {
             </Drawer>
             <div ref={this.mainContentEl}>
                 <TopAppBar
-                    title='Cody Cline'
-                    navigationIcon={<MaterialIcon 
-                    icon='menu'
-                    onClick={this.onDrawerOpen}
-                    />}
+                    title={<p onClick={this.navigateHome}><Icon>Cody Cline</Icon></p>}
+                    navigationIcon={
+                        <Icon 
+                            path={ mdiMenu } 
+                            onClick={this.onDrawerOpen} 
+                            color={this.props.children}
+                            size={this.props.children} 
+                        />
+                    }
                 />
                 <TopAppBarFixedAdjust>
                     {this.props.children}
