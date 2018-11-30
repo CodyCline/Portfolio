@@ -17,7 +17,7 @@ class ProjectCard extends React.Component {
 
     render () {
         return (
-            <Card>
+            <Card outlined>
                 <CardPrimaryContent onClick={this.onProjectNavigate}>
                     <img alt="card" style={{"height": '8em'}} src="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg"></img>
                     <h2>Project: XXXXX</h2>

@@ -12,16 +12,16 @@ const projects = () => {
                 <Cell desktopColumns={4} phoneColumns={4} tabletColumns={4} align="right"/>
             </Row>
             <Row>
-                <Cell align="middle" desktopColumns={3} phoneColumns={4} tabletColumns={4}>
+                <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
                     <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
-                <Cell align="middle" desktopColumns={3} phoneColumns={4} tabletColumns={4}>
+                <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
                     <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
-                <Cell align="middle" desktopColumns={3} phoneColumns={4} tabletColumns={4}>
+                <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
                     <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
-                <Cell align="middle" desktopColumns={3} phoneColumns={4} tabletColumns={4}>
+                <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
                     <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </Cell>
             </Row>
