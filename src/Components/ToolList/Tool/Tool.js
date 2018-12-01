@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Grid, Cell} from '@material/react-layout-grid';
+import {Cell} from '@material/react-layout-grid';
 import Aux from '../../../hoc/_Aux';
 import Hexagon from '../../../Assets/Hexagon/Hexagon';
 

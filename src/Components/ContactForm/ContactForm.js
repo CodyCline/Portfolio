@@ -1,5 +1,4 @@
 import React from 'react';
-import Aux from '../../hoc/_Aux';
 import { Grid, Row, Cell } from '@material/react-layout-grid';
 import TextField, {HelperText, Input} from '@material/react-text-field';
 import Button from '@material/react-button'

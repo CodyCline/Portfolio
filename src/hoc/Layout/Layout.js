@@ -62,13 +62,13 @@ class Layout extends React.Component {
             </Drawer>
             <div ref={this.mainContentEl}>
                 <TopAppBar
-                    title={<p onClick={this.navigateHome}><Icon>Cody Cline</Icon></p>}
+                    title={<p onClick={this.navigateHome}>Cody Cline</p>}
                     navigationIcon={
                         <Icon 
                             path={ mdiMenu } 
                             onClick={this.onDrawerOpen} 
-                            color={this.props.children}
-                            size={this.props.children} 
+                            color="#FFFFFF"
+                            size={2} 
                         />
                     }
                 />

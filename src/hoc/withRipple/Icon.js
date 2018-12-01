@@ -1,32 +1,34 @@
-import React from 'react';
-import withRipple from '@material/react-ripple';
-import './Icon.scss'
+// Disabled for now
 
-const Icon = (props) => {
-    const {
-        children,
-        className = '',
-        // You must call `initRipple` from the root element's ref. This attaches the ripple
-        // to the element.
-        initRipple,
-        // include `unbounded` to remove warnings when passing `otherProps` to the
-        // root element.
-        unbounded,
-        ...otherProps
-    } = props;
+// import React from 'react';
+// import withRipple from '@material/react-ripple';
+// import './Icon.scss'
 
-    // any classes needed on your component needs to be merged with
-    // `className` passed from `props`.
-    const classes = `ripple-icon-component ${className}`;
+// const Icon = (props) => {
+//     const {
+//         children,
+//         className = '',
+//         // You must call `initRipple` from the root element's ref. This attaches the ripple
+//         // to the element.
+//         initRipple,
+//         // include `unbounded` to remove warnings when passing `otherProps` to the
+//         // root element.
+//         unbounded,
+//         ...otherProps
+//     } = props;
 
-    return (
-        <div
-            className={classes}
-            ref={initRipple}
-            {...otherProps}>
-            {children}
-        </div>
-    );
-};
+//     // any classes needed on your component needs to be merged with
+//     // `className` passed from `props`.
+//     const classes = `ripple-icon-component ${className}`;
 
-export default withRipple(Icon);
+//     return (
+//         <div
+//             className={classes}
+//             ref={initRipple}
+//             {...otherProps}>
+//             {children}
+//         </div>
+//     );
+// };
+
+// export default withRipple(Icon);

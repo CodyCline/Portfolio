@@ -5,9 +5,9 @@ import Card, {
     CardActions,
     CardActionButtons,
     CardActionIcons
-  } from "@material/react-card";
+} from "@material/react-card";
 import Icon from '@mdi/react';
-import { mdiStarThreePoints } from '@mdi/js';
+import { mdiStarOutline } from '@mdi/js';
 import Line from '../../Assets/SVG-Assets/Line/Line';
 import { withRouter } from 'react-router-dom';
 
@@ -34,8 +34,8 @@ class ProjectCard extends React.Component {
                         <Button onClick={this.onProjectNavigate}>SEE MORE</Button>
                     </CardActionButtons>
                     <CardActionIcons>
-                    <Icon path={mdiStarThreePoints}
-                        size={1.5}
+                    <Icon path={mdiStarOutline}
+                        size={2}
                         color="#626262"
                     />
                     </CardActionIcons>

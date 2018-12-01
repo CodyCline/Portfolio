@@ -1,14 +1,12 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import { Grid, Row, Cell } from '@material/react-layout-grid';
 import ProfileDetails from '../../Components/ProfileIntro/ProfileDetails';
-import Button from '@material/react-button';
 import Avatar from '../../Components/ProfileIntro/Avatar';
-import Spacer from '../../Components/Spacer/Spacer';
 import Tool from '../../Components/ToolList/Tool/Tool';
-import Aux from '../../hoc/_Aux';
 import ProjectCard from '../../Components/Card/Card';
 import ContactForm from '../../Components/ContactForm/ContactForm';
+import Button from '@material/react-button';
+import Spacer from '../../Components/Spacer/Spacer';
 
 class Home extends React.Component {
     render () {
@@ -71,11 +69,11 @@ class Home extends React.Component {
                 <Row>
                     <Cell desktopColumns={2}></Cell>
                     <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
-                        <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
+                        <ProjectCard height="8em" supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                     </Cell>
                     <Cell desktopColumns={2}></Cell>
                     <Cell desktopColumns={3} phoneColumns={4} tabletColumns={4}>
-                        <ProjectCard supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
+                        <ProjectCard height="8em" supportText="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                     </Cell>
                     <Cell desktopColumns={2}></Cell>
                 </Row>
