@@ -15,6 +15,7 @@ const projectIconSet = (props) => {
                 outlined
                 href={props.projectURL} 
                 target="_blank"
+                rel="noopener noreferrer"
                 icon={
                     <Icon 
                         path={mdiEarth} 
@@ -30,6 +31,7 @@ const projectIconSet = (props) => {
                 outlined
                 href={props.sourceURL} 
                 target="_blank"
+                rel="noopener noreferrer"
                 icon={
                     <Icon 
                         path={mdiGithubFace} 

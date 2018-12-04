@@ -1,10 +1,11 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Grid, Row, Cell } from '@material/react-layout-grid';
-import Gallery from '../../Components/Gallery/Gallery';
+import GalleryItem from '../../Components/GalleryItem/GalleryItem';
 import ProjectIconSet from '../../Components/IconSets/ProjectIconSet';
 import Icon from '@mdi/react';
 import { mdiKeyboardBackspace } from '@mdi/js';
+import  Card, { CardPrimaryContent} from '@material/react-card';
 
 class ProjectPage extends React.Component {
     render() {
@@ -17,15 +18,27 @@ class ProjectPage extends React.Component {
             </Row>
             <Row>
                 <Cell desktopColumns={2}/>
-                <Cell desktopColumns={8}><Icon path={mdiKeyboardBackspace} size={1.5} onClick={this.props.history.goBack} color="#626262"/></Cell>                
+                <Cell desktopColumns={8}>
+                    <Icon path={mdiKeyboardBackspace} size={1.5} onClick={this.props.history.goBack} color="#626262"/>
+                    <hr/>
+                </Cell>                
                 <Cell desktopColumns={2}/>
             </Row>
             <Row>
                 <Cell desktopColumns={2}></Cell>
-                <Cell desktopColumns={8}>
-                    <Gallery/>
-                </Cell>
-                <Cell desktopColumns={2}></Cell>
+                    <Cell desktopColumns={2}>
+                            <GalleryItem/>
+                    </Cell>
+                    <Cell desktopColumns={2}>
+                            <GalleryItem/>
+                    </Cell>
+                    <Cell desktopColumns={2}>
+                            <GalleryItem/>
+                    </Cell>
+                    <Cell desktopColumns={2}>
+                            <GalleryItem/>
+                    </Cell>
+                <Cell desktopColumns={2}/>
             </Row>
             <Row>
                 <Cell desktopColumns={2}></Cell>
@@ -54,7 +67,6 @@ class ProjectPage extends React.Component {
             </Row>
         </Grid>       
 
-        // <p>*table of contents (may deprecate if unessecary</p>
         // <p>*picture gallery</p>
         // <p>*paragraphs of explaining text</p>
         // <p>*log of bugs from Airtable</p>
