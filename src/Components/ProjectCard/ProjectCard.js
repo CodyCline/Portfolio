@@ -8,7 +8,7 @@ import Card, {
 } from "@material/react-card";
 import Icon from '@mdi/react';
 import { mdiStarOutline } from '@mdi/js';
-import Line from '../../Assets/SVG-Assets/Line/Line';
+import Line from '../UI/Line/Line';
 import { withRouter } from 'react-router-dom';
 
 class ProjectCard extends React.Component {
@@ -27,17 +27,18 @@ class ProjectCard extends React.Component {
                     <h2>Project: XXXXX</h2>
                     <p>{this.props.supportText}</p>
                 </CardPrimaryContent>
-                <Line/>
+                <Line height="5" width="270" color="#6200EE"/>
                 
                 <CardActions>                
                     <CardActionButtons>
                         <Button onClick={this.onProjectNavigate}>SEE MORE</Button>
                     </CardActionButtons>
                     <CardActionIcons>
-                    <Icon path={mdiStarOutline}
-                        size={2}
-                        color="#626262"
-                    />
+                        <Icon                    
+                            path={mdiStarOutline}
+                            color="#626262"
+                            size={2}
+                        />
                     </CardActionIcons>
                 </CardActions>
             </Card>

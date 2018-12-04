@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from '../../Components/Card/Card';
+import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 
 
