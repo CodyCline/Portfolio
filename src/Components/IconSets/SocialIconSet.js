@@ -1,7 +1,7 @@
 import React from 'react'
 import Aux from '../../hoc/_Aux';
 import Icon from '@mdi/react';
-import { mdiLinkedinBox, mdiGithubFace, mdiPhoneInTalk, mdiEmail } from '@mdi/js';
+import { mdiLinkedinBox, mdiGithubFace, mdiPhoneInTalk, mdiEmail, mdiStackOverflow } from '@mdi/js';
 
 const socialmediaIconSet = () => {
     return (
@@ -15,7 +15,7 @@ const socialmediaIconSet = () => {
                 </button>
             </a>
             <a href="http://google.com" target='_blank' rel="noopener noreferrer">
-                <button href="http://google.com" class="mdc-icon-button material-icons">
+                <button class="mdc-icon-button material-icons">
                     <Icon                    
                         path={mdiLinkedinBox}
                         color="#0077B5"
@@ -23,18 +23,26 @@ const socialmediaIconSet = () => {
                 </button>
             </a>
             <a href="http://google.com" target='_blank' rel="noopener noreferrer">
-                <button href="http://google.com" class="mdc-icon-button material-icons">
+                <button class="mdc-icon-button material-icons">
                     <Icon                    
                         path={mdiEmail}
                         color="#626262"
                     />
                 </button>
             </a>
-            <a href="http://google.com" target='_blank' rel="noopener noreferrer">
-                <button href="http://google.com" class="mdc-icon-button material-icons">
+            <a href="tel:+11234567890" target='_blank' rel="noopener noreferrer">
+                <button class="mdc-icon-button material-icons">
                     <Icon                    
                         path={mdiPhoneInTalk}
                         color="#626262"
+                    />
+                </button>
+            </a>
+            <a href="http://google.com" target='_blank' rel="noopener noreferrer">
+                <button class="mdc-icon-button material-icons">
+                    <Icon                    
+                        path={mdiStackOverflow}
+                        color="#F48024"
                     />
                 </button>
             </a>

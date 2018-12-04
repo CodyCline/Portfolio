@@ -74,7 +74,8 @@ class Layout extends React.Component {
                 />
                 <TopAppBarFixedAdjust>
                     {this.props.children}
-                </TopAppBarFixedAdjust>                
+                </TopAppBarFixedAdjust>
+                              
             </div>
         </div>
         );

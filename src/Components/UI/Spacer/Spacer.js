@@ -1,7 +1,8 @@
 import React from 'react';
 const spacer = (props) => {
     let styles = {
-        height: props.height
+        height: props.height,
+        width: props.width
     }
 
     return(

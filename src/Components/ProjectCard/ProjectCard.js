@@ -24,8 +24,10 @@ class ProjectCard extends React.Component {
             <Card outlined>
                 <CardPrimaryContent onClick={this.onProjectNavigate}>
                     <img alt="card" style={styles} src="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg"></img>
-                    <h2>Project: XXXXX</h2>
-                    <p>{this.props.supportText}</p>
+                    <div style={{padding: '0.8em'}}>
+                        <h2>Project: XXXXX</h2>
+                        <p>{this.props.supportText}</p>
+                    </div>
                 </CardPrimaryContent>
                 <Line height="5" width="270" color="#6200EE"/>
                 
