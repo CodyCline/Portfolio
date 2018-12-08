@@ -9,7 +9,7 @@ const profileDetails = () => {
             <h1>Hi, i'm Cody Cline</h1>
             <h3>Full Stack Developer based in greater Seattle, WA </h3>
             <Line height="1" width="400" color="#6200EE"/>    
-            <SocialIconSet/>      
+                  
         </Aux>
     );
 }

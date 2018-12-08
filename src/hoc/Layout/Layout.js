@@ -24,10 +24,14 @@ class Layout extends React.Component {
         this.onDrawerClose();
     }
 
-    handleRedirect = () => {
+    navigateProjects = () => {
         this.props.history.push("/projects");
         this.onDrawerClose();
-        
+    }
+
+    navigateContact = () => {
+        this.props.history.push("/contact");
+        this.onDrawerClose();
     }
 
     onDrawerClose = () => {
@@ -49,11 +53,11 @@ class Layout extends React.Component {
                         <ListItemGraphic graphic={<Icon path={ mdiHome } color="#626262" />} />
                         <ListItemText primaryText='Home' />
                     </ListItem>
-                    <ListItem onClick={this.handleRedirect}>
+                    <ListItem onClick={this.navigateProjects}>
                         <ListItemGraphic graphic={<Icon path={ mdiFolder } color="#626262" />} />
                         <ListItemText primaryText='Projects' />
                     </ListItem>
-                    <ListItem onClick={this.handleRedirect}>
+                    <ListItem onClick={this.navigateContact}>
                         <ListItemGraphic graphic={<Icon path={ mdiEmail } color="#626262" />} />
                         <ListItemText primaryText='Contact' />
                     </ListItem>

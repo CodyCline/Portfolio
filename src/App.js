@@ -4,6 +4,7 @@ import Layout from './hoc/Layout/Layout';
 import Home from './Containers/Home/Home';
 import Projects from './Containers/Projects/Projects'
 import ProjectPage from './Containers/ProjectPage/ProjectPage';
+import ContactForm from './Components/ContactForm/ContactForm';
 import './App.scss';
 
 class App extends React.Component {
@@ -14,7 +15,7 @@ class App extends React.Component {
 					<Route exact path="/" component={Home}/>
 					<Route path="/projects" component={Projects}/>
 					<Route path="/project-testxxx" component={ProjectPage}/>
-					<Route path="/contact"/>
+					<Route path="/contact" component={ContactForm}/>
 				</Switch>
 			</Layout>
 		);

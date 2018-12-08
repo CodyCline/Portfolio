@@ -1,15 +1,10 @@
 import React from 'react';
-import Button from '@material/react-button';
-import Card, {
-    CardPrimaryContent,
-    CardActions,
-    CardActionButtons,
-    CardActionIcons
-} from "@material/react-card";
-import Icon from '@mdi/react';
-import { mdiStarOutline } from '@mdi/js';
-import Line from '../UI/Line/Line';
 import { withRouter } from 'react-router-dom';
+import Card, {
+    CardPrimaryContent
+} from "@material/react-card";
+import Line from '../UI/Line/Line';
+
 
 class ProjectCard extends React.Component {
     onProjectNavigate = () => {
@@ -24,14 +19,15 @@ class ProjectCard extends React.Component {
             <Card outlined>
                 <CardPrimaryContent onClick={this.onProjectNavigate}>
                     <img alt="card" style={styles} src="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg"></img>
-                    <div style={{padding: '0.8em'}}>
-                        <h2>Project: XXXXX</h2>
+                    <Line height="5" width="400" color="#6200EE"/>
+                    <div style={{padding: '0 0.8em 0.8em 0.8em'}}>
+                        <h2>Project: Lorem Ipsem</h2>
                         <p>{this.props.supportText}</p>
                     </div>
                 </CardPrimaryContent>
-                <Line height="5" width="270" color="#6200EE"/>
                 
-                <CardActions>                
+                
+                {/* <CardActions>                
                     <CardActionButtons>
                         <Button onClick={this.onProjectNavigate}>SEE MORE</Button>
                     </CardActionButtons>
@@ -42,7 +38,7 @@ class ProjectCard extends React.Component {
                             size={2}
                         />
                     </CardActionIcons>
-                </CardActions>
+                </CardActions> */}
             </Card>
         );
     }
