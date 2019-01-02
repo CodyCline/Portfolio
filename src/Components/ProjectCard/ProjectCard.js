@@ -20,7 +20,7 @@ class ProjectCard extends React.Component {
             height: this.props.height
         }
         return (
-            <Card outlined>
+            <Card outlined className="card-configuration">
                 <CardPrimaryContent onClick={this.onProjectNavigate}>
                     <CardMedia wide imageUrl="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg">
                     </CardMedia>
@@ -32,8 +32,8 @@ class ProjectCard extends React.Component {
                 </CardPrimaryContent>
                 <CardActions>                
                     <CardActionButtons>
-                        <Button>visit</Button>
-                        <Button>source code</Button>
+                        <Button className="card-button">visit</Button>
+                        <Button className="card-button">source code</Button>
                     </CardActionButtons>
                 </CardActions>
                 

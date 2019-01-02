@@ -78,7 +78,7 @@ class Layout extends React.Component {
                             size={2} 
                         />
                     }
-                    className="card-ink"
+                    className="bar-fill"
                 />
                 <TopAppBarFixedAdjust style={{backgroundColor: '#212121'}}>
                     {this.props.children}

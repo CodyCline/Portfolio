@@ -1,3 +1,14 @@
+@import '@material/react-top-app-bar/index.scss';
+@import '@material/react-drawer/index.scss';
+@import '@material/react-list/index.scss';
+@import '@material/react-list/index.scss';
+@import "@material/top-app-bar/mixins";
+.bar-fill {
+	@include mdc-top-app-bar-fill-color(#121212)
+    //@include mdc-top-app-bar-fill-color(#304FFE)
+}
+
+
 .drawer-container {
     display: flex;
     flex-direction: row;

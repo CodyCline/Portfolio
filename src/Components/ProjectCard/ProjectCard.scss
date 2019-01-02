@@ -1,7 +1,18 @@
-@import "@material/button/mixins";
-@import "@material/card/mixins";
 @import '@material/react-card/index.scss';
-.card-ink {
-	@include mdc-top-app-bar-fill-color(#121212)
-// @include mdc-top-app-bar-fill-color(#304FFE)
+@import '@material/button/mixins';
+
+$text-color: white;
+$primary: #2D46D2;
+
+.card-configuration {
+    @include mdc-card-fill-color(#484848);
+    @include mdc-card-outline($primary);
+    color: $text-color;
+}
+
+.card-button {
+    @include mdc-button-filled-accessible($primary);
+    @include mdc-button-ink-color($text-color);
+    @include mdc-button-outline-color($primary);
+    @include mdc-button-icon-color($primary);
 }

@@ -1,21 +1,20 @@
 @import "@material/react-button/index.scss";
-
 @import '@material/react-layout-grid/index.scss';
-@import '@material/react-drawer/index.scss';
-@import '@material/react-top-app-bar/index.scss';
 @import '@material/react-material-icon/index.scss';
-@import '@material/react-list/index.scss';
-@import '@material/react-top-app-bar/index.scss';
-@import '@material/react-tab-bar/index.scss';
-@import '@material/react-list/index.scss';
-@import '@material/react-text-field/index.scss';
+
+
 @import "@material/icon-button/mdc-icon-button";
 @import "@material/snackbar/mdc-snackbar";
 
+
+
+//For global elements like buttons, spinners,
+@import './Master-Override';
+
 //For the top app bar and side drawer
 @import './hoc/Layout/Layout.scss';
-//For the profile intro on the index page
-@import './Components/ProfileIntro/ProfileIntro.scss';
-//For custom dividers that have color and other properties injected
-@import './Master-Override';
+
+//Custom component overrides
 @import './Components/ProjectCard/ProjectCard';
+@import './Components/ProfileIntro/ProfileIntro.scss';
+@import './Components/ContactForm/ContactForm.scss'
