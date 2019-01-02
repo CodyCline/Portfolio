@@ -4,7 +4,10 @@ import TopAppBar, {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 import Drawer from '@material/react-drawer';
 import List, {ListItem, ListItemText, ListItemGraphic} from '@material/react-list';
 import Icon from '@mdi/react';
+import Footer from '../../Components/Footer/Footer';
 import { mdiMenu, mdiHome, mdiFolder, mdiEmail } from '@mdi/js';
+import './Layout.scss'
+
 
 
 class Layout extends React.Component {
@@ -75,9 +78,11 @@ class Layout extends React.Component {
                             size={2} 
                         />
                     }
+                    className="card-ink"
                 />
-                <TopAppBarFixedAdjust>
+                <TopAppBarFixedAdjust style={{backgroundColor: '#212121'}}>
                     {this.props.children}
+                    <Footer/> 
                 </TopAppBarFixedAdjust>
                               
             </div>

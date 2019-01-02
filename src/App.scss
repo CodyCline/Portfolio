@@ -1,5 +1,5 @@
 @import "@material/react-button/index.scss";
-@import '@material/react-card/index.scss';
+
 @import '@material/react-layout-grid/index.scss';
 @import '@material/react-drawer/index.scss';
 @import '@material/react-top-app-bar/index.scss';
@@ -12,13 +12,10 @@
 @import "@material/icon-button/mdc-icon-button";
 @import "@material/snackbar/mdc-snackbar";
 
-
-// refer to element in Javascript portion below
-
-// Custom imports
-
 //For the top app bar and side drawer
 @import './hoc/Layout/Layout.scss';
 //For the profile intro on the index page
 @import './Components/ProfileIntro/ProfileIntro.scss';
 //For custom dividers that have color and other properties injected
+@import './Master-Override';
+@import './Components/ProjectCard/ProjectCard';

@@ -1,8 +1,12 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Card, {
-    CardPrimaryContent
+    CardActionButtons,
+    CardActions,
+    CardPrimaryContent,
+    CardMedia
 } from "@material/react-card";
+import Button from '@material/react-button';
 import Line from '../UI/Line/Line';
 
 
@@ -18,13 +22,20 @@ class ProjectCard extends React.Component {
         return (
             <Card outlined>
                 <CardPrimaryContent onClick={this.onProjectNavigate}>
-                    <img alt="card" style={styles} src="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg"></img>
+                    <CardMedia wide imageUrl="https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1920x1080-c2-8a2be2-00ced1-a-90-f-14.svg">
+                    </CardMedia>
                     <Line height="5" width="400" color="#6200EE"/>
                     <div style={{padding: '0 0.8em 0.8em 0.8em'}}>
                         <h2>Project: Lorem Ipsem</h2>
                         <p>{this.props.supportText}</p>
                     </div>
                 </CardPrimaryContent>
+                <CardActions>                
+                    <CardActionButtons>
+                        <Button>visit</Button>
+                        <Button>source code</Button>
+                    </CardActionButtons>
+                </CardActions>
                 
                 
                 {/* <CardActions>                

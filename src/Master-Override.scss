@@ -1,0 +1,17 @@
+@import "@material/button/mixins";
+@import "@material/card/mixins";
+
+.button-alternate {
+	@include mdc-button-container-fill-color(#304FFE);
+	@include mdc-button-outline-color(#304FFE)
+}
+.card-ink {
+	@include mdc-top-app-bar-fill-color(#121212)
+// @include mdc-top-app-bar-fill-color(#304FFE)
+}
+
+
+
+
+
+

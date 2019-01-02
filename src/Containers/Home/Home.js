@@ -10,6 +10,7 @@ import ContactForm from '../../Components/ContactForm/ContactForm';
 import Button from '@material/react-button';
 import Spacer from '../../Components/UI/Spacer/Spacer';
 import Title from '../../Components/UI/Title/Title';
+import TextBlock from '../../Components/UI/TextBlock/TextBlock';
 
 class Home extends React.Component {
     render () {
@@ -39,7 +40,7 @@ class Home extends React.Component {
                 <Row>
                     <Cell desktopColumns={2}></Cell>
                     <Cell desktopColumns={8}>
-                        <p style={{textAlign: 'justify'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        <TextBlock text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
                     </Cell>
                     <Cell desktopColumns={2}></Cell>                    
                 </Row>
@@ -100,7 +101,7 @@ class Home extends React.Component {
                 <Row>                    
                     <Cell desktopColumns={5}/>
                     <Cell desktopColumns={2}>
-                        <Button outlined raised>see all projects</Button>
+                        <Button className="button-alternate" outlined raised>see all projects</Button>
                     </Cell>
                     <Cell desktopColumns={5}/>
                     <Spacer height="6em"/>
@@ -112,7 +113,10 @@ class Home extends React.Component {
                     </Cell>
                     <Cell desktopColumns={4}></Cell>
                 </Row>
-                <ContactForm/>              
+                <ContactForm/>
+                <Spacer height="1.0em"/>
+                          
+                
             </Grid>            
         );
     }

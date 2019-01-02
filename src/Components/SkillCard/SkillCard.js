@@ -10,7 +10,7 @@ import Hexagon from '../../Assets/Hexagon/Hexagon';
 import Button from '@material/react-button';
 
 class SkillCard extends React.Component {
-    state = {skillOpen: true}
+    state = {skillOpen: false}
 
     onSkillDetailOpen = () => {
         this.setState({skillOpen: true})
