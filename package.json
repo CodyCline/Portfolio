@@ -17,6 +17,7 @@
     "@material/react-tab-bar": "^0.7.0",
     "@material/react-text-field": "^0.7.0",
     "@material/react-top-app-bar": "^0.7.0",
+    "@material/react-typography": "^0.8.0",
     "@material/ripple": "^0.41.0",
     "@material/snackbar": "^0.41.0",
     "@mdi/js": "^3.0.39",

@@ -1,2 +1,27 @@
 @import '@material/react-text-field/index.scss';
-$color: "#ffffff"
+$color: #F5F6FD;
+$secondary:#2D46D2;
+
+.text-field-alt {
+    @include mdc-text-field-focused-outline-color($secondary);
+    @include mdc-text-field-hover-outline-color($color);
+    @include mdc-text-field-outline-color($color);
+    @include mdc-text-field-ink-color($color);
+    @include mdc-text-field-label-color($color);
+    @include mdc-text-field-caret-color($secondary);
+    @include mdc-text-field-helper-text-color_($color);
+}
+
+.text-area-alt {
+    // @include mdc-text-field-textarea-fill-color($color);
+    @include mdc-text-field-textarea-stroke-color($color);
+    @include mdc-text-field-ink-color($color);
+    @include mdc-text-field-caret-color($secondary);
+    @include mdc-text-field-focused-outline-color($secondary);
+    @include mdc-text-field-label-color($color);
+}
+
+.helper-text-alt {
+    @include mdc-text-field-helper-text-color($color);
+    @include mdc-text-field-helper-text-validation-color($color);
+}

@@ -1,8 +1,8 @@
 @import '@material/react-card/index.scss';
 @import '@material/button/mixins';
 
-$text-color: white;
-$primary: #2D46D2;
+$text-color: #F5F6FD;
+$primary: #304FFE;
 
 .card-configuration {
     @include mdc-card-fill-color(#484848);

@@ -5,7 +5,7 @@ import SocialIconSet from '../IconSets/SocialIconSet'
 
 const profileDetails = () => {
     let styles = {
-        color: 'white'
+        color: '#F5F6FD'
     }
     return (
         

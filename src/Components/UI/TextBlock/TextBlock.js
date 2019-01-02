@@ -4,7 +4,7 @@ import Aux from '../../../hoc/_Aux';
 const textBlock = (props) => {
     let styles = {
         textAlign: props.orientation,
-        color: 'white'
+        color: '#F5F6FD'
     }
 
     return ( 

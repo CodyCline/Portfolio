@@ -27,9 +27,10 @@ class ContactForm extends React.Component {
                 <Cell desktopColumns={3}/>
                 <Cell desktopColumns={3}>
                     <TextField
+                        className="text-field-alt"
                         value={this.state.firstName}
                         onChange={(e) => this.setState({value: e.target.firstName})}
-                        leadingIcon={<Icon size={1} path={mdiAccountCircle} color="#333333"/>}
+                        leadingIcon={<Icon size={1} path={mdiAccountCircle} color="#F5F6FD"/>}
                         outlined
                         label='First Name *'
                         helperText={<HelperText>Required</HelperText>}
@@ -42,9 +43,10 @@ class ContactForm extends React.Component {
                 </Cell>
                 <Cell desktopColumns={3}>
                     <TextField
+                        className="text-field-alt"
                         value={this.state.lastName}
                         onChange={(e) => this.setState({value: e.target.lastName})}
-                        leadingIcon={<Icon size={1} path={mdiAccountCircle} color="#333333"/>}
+                        leadingIcon={<Icon size={1} path={mdiAccountCircle} color="#F5F6FD"/>}
                         outlined
                         label='Last Name *'
                         helperText={<HelperText>Required</HelperText>}
@@ -61,7 +63,8 @@ class ContactForm extends React.Component {
                 <Cell desktopColumns={3}/>
                 <Cell desktopColumns={3}>
                     <TextField
-                        leadingIcon={<Icon size={1} path={mdiEmail} color="#333333"/>}
+                        className="text-field-alt"
+                        leadingIcon={<Icon size={1} path={mdiEmail} color="#F5F6FD"/>}
                         outlined
                         label='Email *'
                         helperText={<HelperText>Required</HelperText>}
@@ -74,7 +77,8 @@ class ContactForm extends React.Component {
                 </Cell>
                 <Cell desktopColumns={3}>
                     <TextField
-                        leadingIcon={<Icon size={1} path={mdiPhone} color="#333333"/>}
+                        className="text-field-alt"
+                        leadingIcon={<Icon size={1} path={mdiPhone} color="#F5F6FD"/>}
                         outlined
                         label='Phone'
                         helperText={<HelperText>Fully Optional</HelperText>}
@@ -91,10 +95,12 @@ class ContactForm extends React.Component {
                 <Cell desktopColumns={3} />
                 <Cell desktopColumns={6}>
                     <TextField 
-                        leadingIcon={<Icon size={1} path={mdiInformationOutline} color="#333333"/>}
+                        className="text-field-alt"
+                        leadingIcon={<Icon size={1} path={mdiInformationOutline} color="#F5F6FD"/>}
                         outlined
+                        
                         label='Subject *'
-                        helperText={<HelperText>Required</HelperText>}
+                        helperText={<HelperText className="helper-text-alt">Required</HelperText>}
                     >
                         <Input
                             value={this.state.subject}
@@ -108,10 +114,12 @@ class ContactForm extends React.Component {
                 <Cell desktopColumns={3}/>
                 <Cell desktopColumns={6}>
                     <TextField
-                        trailingIcon={<Icon size={1} path={mdiMessageText} color="#333333"/>}
+                        trailingIcon={<Icon size={1} path={mdiMessageText} color="#F5F6FD"/>}
+                        className="text-area-alt"
                         outlined
+                        fullWidth
                         textarea
-                        label='Message *'
+                        label={'Message *'}
                         helperText={<HelperText>Required</HelperText>}
                         
                     >
@@ -126,7 +134,7 @@ class ContactForm extends React.Component {
             <Row>
                 <Cell desktopColumns={3} />
                 <Cell desktopColumns={3}>
-                    <Button outlined raised icon={<Icon size={1} path={mdiSend} color="#FFFFFF"/>}>send!</Button>
+                    <Button className="button-alternate" outlined raised icon={<Icon size={1} path={mdiSend} color="#F5F6FD"/>}>send!</Button>
                 </Cell>
                 <Cell desktopColumns={6} />
             </Row>
