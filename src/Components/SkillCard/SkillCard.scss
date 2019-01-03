@@ -1,0 +1,18 @@
+@import '@material/react-card/index.scss';
+@import '@material/button/mixins';
+
+$text-color: #F5F6FD;
+$primary: #304FFE;
+
+.card-configuration {
+    @include mdc-card-fill-color(#484848);
+    @include mdc-card-outline($primary);
+    color: $text-color;
+}
+
+.card-button {
+    @include mdc-button-filled-accessible($primary);
+    @include mdc-button-ink-color($text-color);
+    @include mdc-button-outline-color($primary);
+    @include mdc-button-icon-color($primary);
+}

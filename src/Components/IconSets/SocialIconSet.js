@@ -11,7 +11,7 @@ const socialmediaIconSet = () => {
                 <button className="mdc-icon-button material-icons">
                     <Icon                    
                         path={mdiGithubFace}
-                        color="#333333"
+                        color="#F5F6FD"
                     />
                 </button>
             </a>
@@ -27,7 +27,7 @@ const socialmediaIconSet = () => {
                 <button className="mdc-icon-button material-icons">
                     <Icon                    
                         path={mdiEmail}
-                        color="#626262"
+                        color="#F5F6FD"
                     />
                 </button>
             </NavLink>
@@ -35,7 +35,7 @@ const socialmediaIconSet = () => {
                 <button className="mdc-icon-button material-icons">
                     <Icon                    
                         path={mdiPhoneInTalk}
-                        color="#626262"
+                        color="#F5F6FD"
                     />
                 </button>
             </a>

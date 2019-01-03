@@ -4,7 +4,7 @@ import TopAppBar, {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 import Drawer from '@material/react-drawer';
 import List, {ListItem, ListItemText, ListItemGraphic} from '@material/react-list';
 import Icon from '@mdi/react';
-import Footer from '../../Components/Footer/Footer';
+import Footer from '../Footer/Footer';
 import { mdiMenu, mdiHome, mdiFolder, mdiEmail } from '@mdi/js';
 import './Layout.scss'
 

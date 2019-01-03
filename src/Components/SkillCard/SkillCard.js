@@ -36,13 +36,17 @@ class SkillCard extends React.Component {
             <Aux>
             <Card onClick={this.onSkillDetailOpen} outlined>
                 <CardPrimaryContent>
+                    
                     <div>
                         <Icon path={mdiLanguageJavascript} color="#F5DE19" size={2} />
                         <Icon path={mdiReact} color="#61DBFB" size={2} />
                         <Icon path={mdiWebpack} color="#8ED6FB" size={2} />
-                        <Icon path={mdiLanguageCss3} color="#3060A2" size={2} />
                         <Icon path={mdiSass} color="#CE679A" size={2} />
+                        <Icon path={mdiLanguageHtml5} color="#F16524" size={2} />
+                        <Icon path={mdiLanguageCss3} color="#3060A2" size={2} />
+                        <Icon path={mdiMaterialDesign} color="#757575" size={2} />
                     </div>
+                    
                     <div style={{padding: '0.5em'}}>
                         <h2>Cloud</h2>
                         <p>Lorem imspem dolor ipsut nunca et al de Lorem imspem dolor ipsut nunca et al de</p>
